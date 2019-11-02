@@ -1,0 +1,382 @@
+/* цвет фона*/
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    width:auto;
+    margin: 0 auto; 
+}
+.header {
+    background-color: #DEB887;
+    height: 120px;
+}
+.content {
+    background-color: #FFEBCD;
+    height: 650px;
+}
+.content1 {
+    background-color: #FFEBCD;
+    height: 1000px;
+}
+.footer {
+    background-color: #CD853F;
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+}
+.footerlogo {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+
+.footerlogo img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+}
+
+.text {
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.pagename {
+    font-family: cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+h1 {
+  text-shadow: 1px 1px 1px silver,
+               -1px 1px 1px silver;
+  color: white;
+  transition: all .5s;
+  }
+  h1:hover {
+    text-shadow: -1px -1px 1px silver,
+                 1px -1px 1px silver;
+    color: #FF4500;
+    }
+
+h2 {
+    color:#202020;
+    text-shadow: 0px 2px 3px #777;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    margin-left: 5px;
+}
+
+.good1 a img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.good2 a img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.good3 a img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.copywrite {
+    position: relative;
+    display: block;
+    float: right;
+    width: auto;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 125px;
+    height: 75px;
+    margin-left: 50px;
+    margin-right: 15px;
+    float: left;
+}
+
+.logo img {
+    height: 75px;
+    position: relative;
+    margin-top: 25px;
+}
+/*стиль верхнего меню*/
+.Menu li{
+    margin-right: 2rem;
+    display: inline-block; /*в линию, а не столбиком*/
+    font-style: bold;
+    font-size: 20px;
+    list-style-type: none; /* делаю меню без точек*/
+    font-family: monospace;
+    border: none;
+}
+
+/*при наведении курсора мыши цвет текста меняется на указаный*/
+.Menu li a:hover {
+    color: #8B4513;
+}
+/* цвет текста на меню активной страницы*/
+.Menu li a:active {
+    color: #BC8F8F;
+}
+/* делаю выпадающее подменю в два шага
+шаг первый - скрываю подменю раздела с товарами*/
+.catalog li a {
+    display: none;
+}
+/*шаг второй - навожу курсором на меню (Menu:hover)
+в "ребенке меню" показываю список со ссылкой а
+и выравниваю как "родительский эл-т"*/
+.Menu:hover .catalog li a {
+    display: block;
+    text-align: match-parent;
+    top: 100%;
+    height: 20px;
+}
+
+.good1,
+.good2,
+.good3 {
+    width: 33%;
+    height: 300px;
+    float: left;
+    margin-top: 25px;
+}
+
+ /* подменю с каталогом*/   
+.catalog {
+    display: inherit;
+    text-align: left;
+    display: grid;
+    position: fixed;
+    font-size: 1rem;
+    transition: width 2s;
+}
+/* верхняя шапка меню в блоке div*/
+.menu {
+    height: inherit;
+    width: auto;
+    float: right;
+}
+/* горизонтальная линия*/
+.hr {
+    color: #FF4500;
+    margin: 0px;
+    position: relative;
+    size: thick;
+}
+/*заголовок с описанием товара и его стилизация для ДЗ*/
+h3 {
+    color:#202020;
+    text-shadow: 0px 2px 3px #777;
+    clear: both;
+}
+
+.productImage {
+    float: left;
+    width: 325px;
+    height: 275px;
+}
+
+.bag {
+    display: block;
+    position: relative;
+    width: 325px;
+    height: 275px;
+    overflow: hidden;
+    margin: 0px auto;
+    float: left;
+}
+
+.bag:hover {
+	outline: none;
+}
+
+.bag img {
+    width: 325px;
+    height: 275px;
+}
+
+.describe {
+    display: block;
+    margin-bottom: 50px;
+}
+/*список с коротким описанием товара*/
+.describe2 {
+    display: inline-block;
+    color: #707070;
+    font-style: italic;
+    line-height: 14px;
+    float: left;
+    margin-top: 0px;
+    padding: 0px;
+    width: 30%;
+    height: auto;
+    
+}
+/*Подробное описание товара*/
+.describe3 {
+    clear: both;
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;    
+}
+
+/*хар-ки товара*/
+.list {
+    display: block;
+    position: relative;
+    color: #B22222;
+    font-family: cursive;
+    line-height: 20px;
+    font-style: normal;
+    list-style-image: url(img/smile.png);
+    float: left;
+    margin: 0px;
+    width: 30%;
+}
+.describe4 {
+    position: relative;
+    height: 300px;
+}
+.form1 a {
+    color:#202020;
+    text-shadow: 1px 1px 0px #999, -1px -1px 0px #999;
+    font-size: 25px;
+    font-style: normal;
+    font-stretch: expanded;
+    text-align: center;
+}
+
+
+/*заголовок для формы*/
+#form {
+    text-align: center;
+    text-decoration: inherit;
+}
+/* Базовые стили формы */
+form{
+  margin:0 auto;
+  max-width:50%;
+  box-sizing:border-box;
+  padding:30px;
+  border-radius:5px; 
+  background:RGBA(255,255,255,1);
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+/* Стили полей ввода */
+.textbox{
+  height:40px;
+  width:50%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:12px;
+  margin-bottom:30px;  
+}
+
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:#B22222;
+}
+/*При вводе текста в поле Email на странице контактной информации поменять цвет текста и цвет поля.*/
+input[name="emailaddress"]:focus {
+    color: #FF4500;
+    font: bold;
+    border-color: coral;
+}
+/* При вводе текста в текстовые поля каждое слово должно начинаться с большой буквы, даже если пользователь будет вводить с маленькой. */
+textarea[name="subject"],
+input[name="subject"]:focus {
+    text-transform: capitalize;
+}
+/* Стили текстового поля */
+.message{
+    background: rgba(255, 255, 255, 0.4); 
+    width:50%;
+    height: 100px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.button{
+  height:40px;
+  width:20%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:#90c843;
+  color:#FFF;
+  font-family: 'Open Sans', sans-serif;  
+  font-weight:400;
+  font-size: 16pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+/* Изменение фона кнопки при наведении */
+.button:hover{
+    background:#80b438;
+}
+/*Картинка с товаром на странице его описания*/
+
+/*Границы для ячеек таблицы*/
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {
+    border: 2px solid grey;
+    float: none;
+    height: auto;
+    padding:5px;
+    overflow: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+} 
+.button8 {
+    position: relative;
+    clear: both;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+    float: left;
+    margin: -50px 5px 100px 90px;
+} 
+.button8:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.button8:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }

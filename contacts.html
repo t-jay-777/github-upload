@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="container">
+       <div class="header">
+        <div class="logo">
+             <img src="img/logo2.png" alt="Logo">
+         </div>
+         <div class="menu"> <!-- shapka -->
+              <ul class="Menu">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="catalog.html">Каталог</a>
+                      <ul class="catalog"> <!--Сделать выкидное меню -->
+                          <li><a class="link" href="katalog/bag1.html" target="_blank">Первая сумка</a></li>
+                          <li><a class="link" href="katalog/bag2.html" target="_blank">Вторая сумка</a></li>
+                          <li><a class="link" href="katalog/bag3.html" target="_blank">Третья сумка</a></li>
+                      </ul>
+                   </li>
+                   <li><a href="#">Контакты</a></li>
+               </ul>
+            </div>
+        </div>
+       <div class="content1">
+          <div class="form1">
+              <hr color=#FF4500>
+              <a href="mailto:pjanka@list.ru"> Напишите нам на e-mail</a><br>
+              <h2 id="form">Или напишите нам здесь:</h2>
+              <form>
+                  <input name="name" placeholder="Укажите ваше имя!" class="textbox" required />
+                  <input name="emailaddress" placeholder="Укажите ваш Email!" class="textbox" type="email" required />
+                  <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
+                  <input name="submit" class="button" type="submit" value="Отправить" />
+              </form>
+              <div class="address">
+                  <h4>Наш адрес:<br>Sulh Rd, Kabul, Афганистан</h4>
+                  <h4>Номер телефона:<br>123 456 7890</h4>
+                  <b>Мы находимся тут:</b><br><br>
+              </div>
+              <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27025.1129056465!2d69.2094258706475!3d34.53965772463848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sno!4v1569617138512!5m2!1sru!2sno" width="100%" height="374px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+          </div>
+       </div>
+       <hr class="hr" color: #FF4500>
+       <div class="footer">
+           <div class="footerlogo"><img src="img/logo.png" alt="logo"></div>
+           <div class="copywrite"> &ensp;Все права защищены<br>&copy;by Yevhen Tkachenko </div>
+       </div>
+   </div>
+</body>
+</html>
